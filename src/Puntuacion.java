@@ -26,8 +26,8 @@ public class Puntuacion {
         if (resultadoValido(marcador)) {
             int[] puntosPartido = puntosLiga(marcador);     // puntos de ESTE partido
 
-            resultadoPuntos[0] = resultadoPuntos[0] + puntosPartido[0];  // se suman al acumulado
-            resultadoPuntos[1] = resultadoPuntos[1] + puntosPartido[1];
+            resultadoPuntos[0] += puntosPartido[0];  // se suman al acumulado
+            resultadoPuntos[1] += puntosPartido[1];
 
             // 3. Y al final se muestra
             String ganador = "Local " + equipoVS[0] + " " + marcador[0] + " - " + marcador[1] + " " + equipoVS[1] + " Visitante";
